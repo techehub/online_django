@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="813e8023-cf6e-410f-83f9-5e936e039ed3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mywebsite1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/myshop/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/myshop/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/myshop/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/myshop/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/myshop/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/templates/productlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/productinfo/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop/user/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eijE4veWTpEBEpVuXFekkayUik" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="813e8023-cf6e-410f-83f9-5e936e039ed3" name="Default Changelist" comment="" />
+      <created>1594811193171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594811193171</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="97" key="RollbackChangesDialog" timestamp="1594898600513">
+      <screen x="0" y="23" width="1280" height="714" />
+    </state>
+    <state x="374" y="97" key="RollbackChangesDialog/0.23.1280.714@0.23.1280.714" timestamp="1594898600513" />
+    <state x="149" y="26" key="SettingsEditor" timestamp="1594811260019">
+      <screen x="0" y="23" width="1280" height="728" />
+    </state>
+    <state x="149" y="26" key="SettingsEditor/0.23.1280.728@0.23.1280.728" timestamp="1594811260019" />
+    <state x="296" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1594894218587">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="296" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.716@0.23.1280.716" timestamp="1594894218587" />
+  </component>
+</project>
