@@ -1,0 +1,18 @@
+
+{% extends 'index.html' %}
+
+ {%  block content %}
+
+{{product.id}} <br/>
+{{product.name}}  <br/>
+{{product.price}}  <br/>
+
+<form action="/product/addtocart">
+<input type="hidden" name="productid" value="{{product.id}}">
+<input type="number" name="qty">
+    <input type="submit" value="Add to cart">
+</form>
+
+
+
+    {% endblock %}

@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
+from django.template import loader
 
+def index(req):
+    template= loader.get_template("index.html")
+    data={}
+    res=template.render(data, req)
+    return HttpResponse(res)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('product/',  include('productinfo.urls'))
+    path ('product/',  include('productinfo.urls')),
+    path ('contact/', include('user.urls')),
+    path ('', index )
 ]

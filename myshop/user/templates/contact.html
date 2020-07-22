@@ -1,0 +1,15 @@
+
+{% extends 'index.html'%}
+
+
+{%  block content %}
+<form action="/contact/save" method="post">
+
+   name <input type="text" name="name">
+   email <input type="email" name="email">
+    phone <input type="text" name="phone">
+    <input type="submit">
+
+</form>
+
+{% endblock %}
