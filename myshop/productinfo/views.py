@@ -58,4 +58,37 @@ def myproduct_detail(request, pid ):
 def addtocart (req):
     print (req.GET['productid'])
     print (req.GET['qty'])
-    return HttpResponse("recived")
+
+    res= HttpResponse("recived")
+    str= req.COOKIES.get('PID')
+    if str != None :
+        str= str + ","+ req.GET['productid'] + ":" + req.GET['qty']
+    else :
+        str = req.GET['productid'] + ":" + req.GET['qty']
+    res.set_cookie("PID" , str, 24*60*60*365)
+    return res
+
+def showcart(req):
+    template = loader.get_template("cart.html")
+
+    str = req.COOKIES.get('PID')
+
+    if str != None:
+        items = str.split(',')
+
+        cartproducts = []
+        for item in items:
+            vals = item.split(':')
+            id = vals[0]
+            qty = vals[1]
+            cartproducts.append({id: qty})
+
+
+        data   = { "cart" : cartproducts}
+    else :
+        data={}
+
+
+
+    res = template.render(data, req)
+    return HttpResponse(res)
