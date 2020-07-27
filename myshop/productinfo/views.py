@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from .models import Product
+from django.http import JsonResponse
 # Create your views here.
 
 
@@ -55,6 +56,8 @@ def myproduct_detail(request, pid ):
     res = template.render(data, request)
     return HttpResponse(res)
 
+
+'''
 def addtocart (req):
     print (req.GET['productid'])
     print (req.GET['qty'])
@@ -92,3 +95,94 @@ def showcart(req):
 
     res = template.render(data, req)
     return HttpResponse(res)
+'''
+
+
+def addtocart (request):
+
+    pid= request.GET['productid']
+    qty= request.GET['qty']
+
+
+    print (request.headers['User-Agent'])
+
+    cartItems = {}
+
+
+    if request.session.__contains__("cart"):
+        cartItems = request.session['cart']
+
+    cartItems[pid] = qty
+    request.session['cart'] = cartItems
+    print(request.session['cart'])
+
+    return HttpResponse("recived")
+
+
+
+
+def showcart(request):
+    template = loader.get_template("cart.html")
+    if request.session.__contains__("cart"):
+        cartItems = request.session['cart']
+
+        items = []
+        for x, y in cartItems.items():
+            p = Product.objects.get(id=x)
+            items.append({"id": x,
+                          "qty": y,
+                          "name": p.name,
+                          "price": p.price,
+                          "total": p.price * int(y)
+                          })
+
+        data = {"products": items}
+
+        res = template.render(data, request)
+        return HttpResponse(res)
+    else:
+        return HttpResponse("Your Cart is Empty")
+
+
+
+def search (request):
+    template = loader.get_template("productsearch.html")
+    data = {}
+    res = template.render(data, request)
+    return HttpResponse(res)
+
+def getProducts(request, key):
+    items = []
+    print (key)
+    for p in Product.objects.filter(name__contains=key):
+
+        items.append({"id": p.id,
+                      "name": p.name,
+                      "price": p.price
+                      })
+
+    data = {"products": items}
+    return JsonResponse(data=data)
+
+
+
+
+def getdata(request):
+    items = []
+
+    for p in Product.objects.all ():
+
+        items.append({"id": p.id,
+                      "name": p.name,
+                      "price": p.price
+                      })
+
+    data = {"products": items}
+    return JsonResponse(data=data)
+
+
+
+
+
+
+
